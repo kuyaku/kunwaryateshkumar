@@ -9,7 +9,9 @@ const ProjectEntry = ({ src, name, description, url_demo, url_github }) => {
           <h1 className="p-2 font-bold text-center text-xl">{name}</h1>
         </div>
         <div className="">
-          <p className="p-2 text-lg text-justify">{description}</p>
+          <p className="text-gray-300 p-2 text-sm md:text-lg text-justify">
+            {description}
+          </p>
         </div>
       </div>
       <div className="flex justify-center gap-5 py-3 bg-gray-900">

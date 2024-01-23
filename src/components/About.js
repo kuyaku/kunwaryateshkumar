@@ -23,8 +23,8 @@ const About = () => {
             technology.{" "}
           </p>
         </div>
-        <div className="flex-1 lg:p-4 lg:text-xl flex flex-col gap-3">
-          <p>
+        <div className="flex-1 lg:p-4 text-sm md:text-lg lg:text-xl flex flex-col gap-3">
+          <p className="">
             {" "}
             Currently, my journey revolves around the intriguing realms of{" "}
             <span className="text-lg lg:text-2xl text-orange-600">
