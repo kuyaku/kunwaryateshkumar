@@ -20,16 +20,22 @@ const Projects = () => {
           src={"/assets/projects/taskharbour.png"}
           name={"Task Harbour"}
           description={taskharbour}
+          url_github={"https://github.com/kuyaku/taskharbour-frontend"}
+          url_demo={"https://taskharbour.vercel.app/"}
         />
         <ProjectEntry
           src={"/assets/projects/blogin.png"}
           name={"Blogin.xyz"}
           description={blogin}
+          url_github={"https://github.com/kuyaku/blogin.xyz"}
+          url_demo={"https://bloginxyz.up.railway.app/"}
         />
         <ProjectEntry
           src={"/assets/projects/portfolio.png"}
           name={"My Portfolio"}
           description={porfolio}
+          url_demo={"https://kunwaryateshkumar.vercel.app/"}
+          url_github={"https://github.com/kuyaku/kunwaryateshkumar"}
         />
       </div>
     </div>

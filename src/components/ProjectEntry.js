@@ -1,4 +1,4 @@
-const ProjectEntry = ({ src, name, description }) => {
+const ProjectEntry = ({ src, name, description, url_demo, url_github }) => {
   return (
     <div className="text-white w-[320px] border border-gray-500 shadow-2xl min-h-full flex flex-col overflow-hidden rounded-lg">
       <div className="flex-1">
@@ -14,13 +14,17 @@ const ProjectEntry = ({ src, name, description }) => {
       </div>
       <div className="flex justify-center gap-5 py-3 bg-gray-900">
         {name !== "My Portfolio" && (
-          <button className="bg-orange-700 text-gray-100 p-2 font-bold rounded-md px-4">
-            DEMO
-          </button>
+          <a href={url_demo} rel="noreferrer" target="_blank">
+            <button className="bg-orange-700 text-gray-100 p-2 font-bold rounded-md px-4">
+              DEMO
+            </button>
+          </a>
         )}
-        <button className="bg-orange-700 text-gray-100 p-2 font-bold rounded-md px-4">
-          Github
-        </button>
+        <a href={url_github} rel="noreferrer" target="_blank">
+          <button className="bg-orange-700 text-gray-100 p-2 font-bold rounded-md px-4">
+            Github
+          </button>
+        </a>
       </div>
     </div>
   );
