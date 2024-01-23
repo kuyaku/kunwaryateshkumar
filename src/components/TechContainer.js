@@ -2,7 +2,6 @@ import React from "react";
 import { skills, invertSkills, icons, toolIcons, tools } from "../CONSTANTS";
 
 const TechContainer = () => {
-  console.log(toolIcons);
   return (
     <div
       id="skills"
@@ -20,6 +19,7 @@ const TechContainer = () => {
           }
           return (
             <div
+              key={skill}
               className={
                 "group  border border-gray-500 shadow-sm translate-x-0 translate-y-0 rounded-lg md:p-4 relative overflow-hidden "
               }
@@ -62,6 +62,7 @@ const TechContainer = () => {
           const tool = tools[index];
           return (
             <div
+              key={tool}
               className={
                 "group  border border-gray-500 shadow-sm translate-x-0 translate-y-0 rounded-lg md:p-4 relative overflow-hidden "
               }
